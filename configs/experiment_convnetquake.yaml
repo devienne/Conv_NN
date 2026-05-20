@@ -1,0 +1,33 @@
+# Experiment configuration for the ConvNetQuake reproduction.
+# All hyperparameters and study-area settings live here.
+
+# --- Study area ---
+lat_min: 35.7
+lat_max: 36.0
+lon_min: -97.6
+lon_max: -97.2
+
+# --- Station ---
+station:    OK027
+channel:    "HH?"
+start_date: "2014-02-15"
+end_date:   "2015-02-15"
+
+# --- Station coordinates (OK027) ---
+station_lat: 35.721
+station_lon: -97.28
+
+# --- Travel-time correction ---
+p_wave_velocity_kms: 6.0
+
+# --- Processing ---
+window_s:            20     # window length in seconds
+max_noise_per_file:  150    # noise windows saved per daily file
+train_ratio:         0.70   # first 70% of files (by date) -> training
+
+# --- Model ---
+n_channels:    3
+n_samples:     2000    # 20 s x 100 Hz
+sampling_rate: 100.0   # Hz
+batch_size:    32
+epochs:        10

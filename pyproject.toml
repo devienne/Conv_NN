@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seismic-cnn"
+version = "0.1.0"
+description = "ConvNetQuake reproduction — CNN-based seismic earthquake detector (Perol et al. 2018)"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "obspy",
+    "tensorflow>=2.12",
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "scikit-learn",
+    "requests",
+    "pyyaml",
+    "h5py",
+    "fastapi",
+    "uvicorn[standard]",
+    "streamlit",
+    "optuna",
+    "pydantic>=2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "ruff",
+]
+
+[project.scripts]
+seismic-train    = "scripts.train:main"
+seismic-pipeline = "scripts.run_pipeline:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
