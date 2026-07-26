@@ -1,4 +1,4 @@
-# SeismicCNN — ConvNetQuake Reproduction
+# SeismiCNN — ConvNetQuake Reproduction
 
 Reproduction of [**Perol, Gharbi & Denolle (2018)**](https://www.science.org/doi/10.1126/sciadv.1700578) — a convolutional neural network for earthquake detection from seismic records, applied to induced seismicity in central Oklahoma US.
 
