@@ -2,11 +2,6 @@
 
 Reproduction of [**Perol, Gharbi & Denolle (2018)**](https://www.science.org/doi/10.1126/sciadv.1700578) — a convolutional neural network for earthquake detection from seismic records, applied to induced seismicity in central Oklahoma US.
 
-> Devienne, J. A. P. M. "Convolutional neural network for earthquake detection."
-> arXiv. doi: [10.48550/arXiv.2304.08328](https://doi.org/10.48550/arXiv.2304.08328)
-
----
-
 ## Overview
 
 The [2011–2015 Oklahoma induced seismicity sequence](https://earthquake.usgs.gov/research/induced/)
